@@ -1,6 +1,6 @@
 <template>
   <section>
-    <strong>{{ tempoDecorrido }}</strong>
+    <strong class="display">{{ tempoDecorrido }}</strong>
   </section>
 </template>
 <script lang="ts">
@@ -10,8 +10,8 @@ export default defineComponent({
   name: "Cronômetro",
   props: {
     tempoEmSegundos: {
-        type: Number,
-        default: 0
+      type: Number,
+      default: 0
     }
   },
   computed: {
@@ -21,3 +21,9 @@ export default defineComponent({
   },
 });
 </script>
+
+<style scoped>
+.display {
+  color: var(--texto-primario);
+}
+</style>
