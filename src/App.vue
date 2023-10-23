@@ -11,7 +11,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import BarraLateral from './components/molecules/BarraLateral.vue';
+import BarraLateral from './components/organisms/BarraLateral.vue';
 
 export default defineComponent({
   name: 'App',
